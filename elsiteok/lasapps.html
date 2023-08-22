@@ -1,0 +1,565 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="shortcut icon" href="/favicons/favicon.ico">
+<link rel="manifest" href="/favicons/manifest.json">
+<meta name="theme-color" content="#d6de6e">
+<meta name="msapplication-config" content="https://say.studio//favicons/browserconfig.xml">
+
+
+<title>SAY Studio | Design & Web Development by Collin Joyce</title>
+
+<script>
+  var root = document.getElementsByTagName('html')[0];
+  root.className += 'js';
+</script>
+
+<script>
+  window.devMode = false;
+</script>
+
+<script>
+  window.addEventListener('touchstart', function() {
+    document.getElementsByTagName('html')[0].classList.add('is-touch');
+    window.isTouch = true;
+  });
+</script>
+
+<script>
+  const updateVh = function() {
+    const vh = window.innerHeight;
+    document.documentElement.style.setProperty('--vh100', `${vh}px`);
+  };
+
+  if (typeof window !== 'undefined') {
+    window.addEventListener('resize', updateVh);
+    updateVh();
+  }
+</script>
+
+<script>
+  window.lazySizesConfig = {
+    addClasses: true,
+    expand: 1000,
+    lazyClass: 'lazyload',
+    loadingClass: 'is-loading',
+    loadedClass: 'is-loaded',
+    customMedia: {
+      '--small': '(max-width: 768px)'
+    }
+  };
+</script>
+
+<link rel="stylesheet" href="https://say.studio//dist/styles/main-8ba3a1dfdc.css">
+  </head>
+
+  <body class="">
+
+    
+  
+  <div class="nav__home js-nav">
+  <a href="https://say.studio/">
+    <img src="/dist/images/earth.gif" alt="">
+  </a>
+</div>
+
+<div class="nav__links js-nav js-nav">
+  <a href="/#work">Work</a>
+  <a class="js-info-toggle" href="https://say.studio/info">Info</a>
+  <a href="mailto:info@say.studio">Contact</a>
+</div>
+  <div class="say-text-outer">
+  <div class="say-text">
+
+    <span class="word " style="--word-index: 1" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 2" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 3" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 4" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 5" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 6" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 7" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 8" data-title="SAY&nbsp;">SAY&nbsp;</span>
+    <span class="word " style="--word-index: 9" data-title="SAY&nbsp;">SAY&nbsp;</span>
+
+  </div>
+</div>
+  
+  <div class="art-pane">
+
+      <div class="js-work-list-art art-pane__art --sonos-radio --contain" data-project="sonos-radio">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEwAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A3D4iuP8AhIP7O8mPy%2FO2btpzj86fpd5dJqotr2VwWT5UY53HsensafdXFrqGoiwXYsysxzjnI4rOtdVDa7bQG0jZg3ledg7hjj1xTbRag5K6OrEEQk8wRJ5n97aM%2FnUK6faLKsot08xDlWxyDRRSJvY%2F%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-hero_2023-03-14-233537_lwfu.png?w=1200&amp;h=1440&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678836937&amp;s=48d80effb21cf9ecde75006c5626e7f6 1200w, https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-hero_2023-03-14-233537_lwfu.png?w=992&amp;h=1190&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678836937&amp;s=a79d8e0099a518f26a08309152a5f640 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-hero_2023-03-14-233537_lwfu.png?w=768&amp;h=921&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1678836937&amp;s=20555efc6966173919b82b8a6818ce50 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-hero_2023-03-14-233537_lwfu.png?w=576&amp;h=691&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678836937&amp;s=67095383b6c283c89ccdc01040429edd 576w, https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-hero_2023-03-14-233537_lwfu.png?w=1152&amp;h=1382&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678836937&amp;s=bed5fcb01791c8c4c5c7506737ad5f53 1152w"
+    sizes="auto" alt="Sonos hero" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --field-notes " data-project="field-notes">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEwAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A7m6uo7SMSS52k44otLqO7iMkWdoOOaj1AyCAeVCJSTyCM4o04ymA%2BbCIiG4GMZGOtRd81ire7ct0UUVZJ%2F%2FZ"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/field-notes-hover.png?w=1200&amp;h=1440&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1677629627&amp;s=65d85f80481aa65e8483e71fed295769 1200w, https://optimise2.assets-servd.host/momentous-zorro/staging/field-notes-hover.png?w=992&amp;h=1190&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1677629627&amp;s=0c960ceb43935a2d77f0e1d62bfee055 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/field-notes-hover.png?w=768&amp;h=921&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1677629627&amp;s=97883a43606ff8c17a9d38ff5f1dd90b 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/field-notes-hover.png?w=576&amp;h=691&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1677629627&amp;s=978467be63fc3f66c47422c64a6440a3 576w, https://optimise2.assets-servd.host/momentous-zorro/staging/field-notes-hover.png?w=1152&amp;h=1382&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1677629627&amp;s=1580724a68807473e8cb20908e3a5a2f 1152w"
+    sizes="auto" alt="Field notes hover" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --studio-shalo --cover" data-project="studio-shalo">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAFAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A6Oymg0KMQX8qiaY7jsyQBjA%2FlWd4gkNpqUWoJOPs8wXDAFsOvTGPXir19DpniC8ktGEiXVuCBKnBXn9RVfTrM6BK6XkguBJygC4AAPJx68irT1MZQXJZ737f1%2FWwnhMb9W1aVuW8zH%2FjzVp%2BIIkeK3dlyVkIHPYqQRRRWa2%2B86cRpLTy%2FJH%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-hero-cans-01.png?w=1200&amp;h=1500&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1680303826&amp;s=d34f9c675535e993c306c43599499d27 1200w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-hero-cans-01.png?w=992&amp;h=1240&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1680303826&amp;s=15c051ce1fd545d42e4833d95a872732 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-hero-cans-01.png?w=768&amp;h=960&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1680303826&amp;s=d262d4dc112db3d72c2d6f2bb2156631 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-hero-cans-01.png?w=1536&amp;h=1920&amp;q=45&amp;fm=webp&amp;fit=crop&amp;dm=1680303826&amp;s=a3c5893e17aaa073cb473b8bf3ae19b4 1536w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-hero-cans-01.png?w=576&amp;h=720&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1680303826&amp;s=21b34101c430fcc9b0fd72270dcd18d4 576w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-hero-cans-01.png?w=1152&amp;h=1440&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1680303826&amp;s=6ae62a5c3b79ddc85469ec73b2e1c857 1152w"
+    sizes="auto" alt="Shalo hero cans 01" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --mas-context --contain" data-project="mas-context">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEwAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A7TUNTtNNVDdSbd5wABk%2FXHpU1tdQXcfmW8ySr6qc4rM1rQItUbzlkaOcDgnlT9R%2FhUPh7Q3sJnnuABIBsUKcj3NReXN5HTy0XSvd8xv0UUVZzH%2F%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/mas-context-hero_2023-03-15-225720_zrao.png?w=1200&amp;h=1440&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678921041&amp;s=62918527d7b1383ee6f58aedbf8c1186 1200w, https://optimise2.assets-servd.host/momentous-zorro/staging/mas-context-hero_2023-03-15-225720_zrao.png?w=992&amp;h=1190&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678921041&amp;s=d77d65444fe206e64eaf6a4bdaf31ccb 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/mas-context-hero_2023-03-15-225720_zrao.png?w=768&amp;h=921&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1678921041&amp;s=44490e5f2f3218b0a81161871fe72118 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/mas-context-hero_2023-03-15-225720_zrao.png?w=576&amp;h=691&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678921041&amp;s=93a8b69f71357bdffb2db4f48934a855 576w, https://optimise2.assets-servd.host/momentous-zorro/staging/mas-context-hero_2023-03-15-225720_zrao.png?w=1152&amp;h=1382&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678921041&amp;s=9872902145bf857482ccfeb71d15ee73 1152w"
+    sizes="auto" alt="Mas context hero" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --varyer --contain" data-project="varyer">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAFAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A72WVIULyHCjviiKVJkDxMGU9CKrashk0y4CglghKgAEkjkYyKh0ASDSYjMpSRixZSMY5NFx8rtzdDSooooEf%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/varyer-hero_2023-03-31-181750_reaj.png?w=992&amp;h=1240&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1680286670&amp;s=7f33941187ebaee8f2b26aadf43507a9 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/varyer-hero_2023-03-31-181750_reaj.png?w=768&amp;h=960&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1680286670&amp;s=013cf4684d69e78b3392c9ca2685a562 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/varyer-hero_2023-03-31-181750_reaj.png?w=576&amp;h=720&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1680286670&amp;s=022894f70d04bcf6596fa38ab3df9a86 576w"
+    sizes="auto" alt="Varyer hero" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --manual-cinema --contain" data-project="manual-cinema">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEgAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A6WfX%2FwDiZy2ttCHjtgTcTMflU%2F3R6mksvEdvcXfkEq6nbiWPkAtnAb0PH61jeItGu4dRSWxUSQXEweaPoCc5%2Bb298fWrnh6xuxrd3c3VlHbROqlY1YEBx3x%2BJrn5nz2ua2VjqCoJyQD%2BFAAByAAaKKv7RHQ%2F%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/manualcinema-hover.png?w=768&amp;h=880&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1678485677&amp;s=83f79c4e5ac1738a4cf84b9549c79ff2 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/manualcinema-hover.png?w=576&amp;h=660&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678485677&amp;s=7782133c57e09bdabe3258b1fada07ee 576w"
+    sizes="auto" alt="Manualcinema hover" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --axoft --contain" data-project="axoft">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgABwAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8Ak0W78SeKbRw13HaWucGeIYkyOwwf8K6bTtP1DTlSM6g19HwG%2B0cMPcNz%2BRooqr9AP%2F%2FZ"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/axoft-hover.png?w=1200&amp;h=591&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678830602&amp;s=1985f38e0c76990d1907e6d1dd68793a 1200w, https://optimise2.assets-servd.host/momentous-zorro/staging/axoft-hover.png?w=992&amp;h=488&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678830602&amp;s=6ffb5c830daad41d32c1039f32a27561 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/axoft-hover.png?w=768&amp;h=378&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1678830602&amp;s=f335785887cf80f6fde22986721988ce 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/axoft-hover.png?w=1536&amp;h=756&amp;q=45&amp;fm=webp&amp;fit=crop&amp;dm=1678830602&amp;s=a0a1270eebd1a9bf1668c04501514e91 1536w, https://optimise2.assets-servd.host/momentous-zorro/staging/axoft-hover.png?w=576&amp;h=283&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678830602&amp;s=28017a1b5cd9e95ded0fd9cf8433dbc9 576w, https://optimise2.assets-servd.host/momentous-zorro/staging/axoft-hover.png?w=1152&amp;h=567&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678830602&amp;s=019c2092f2e0d07754393927c993c259 1152w"
+    sizes="auto" alt="Axoft hover" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --haute-living --contain" data-project="haute-living">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEwAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A63VdZj0y4t4pImcS5ywP3Rxz71oo6yKGRgynoQc1k69pkmoxgxPsaIZXjO4%2Bn%2BfWk0TSJ9NuJWmnEoZAF2rtAOTn%2BQ%2FOs05c3kbNU3BNPU2aKKK0MT%2F%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/haute-chair-02.png?w=1200&amp;h=1440&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678316510&amp;s=d33e1b8df66d4c37c527847725fe1aaa 1200w, https://optimise2.assets-servd.host/momentous-zorro/staging/haute-chair-02.png?w=992&amp;h=1190&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678316510&amp;s=ecf6cd4d052aa020f07e51774c3a3c6e 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/haute-chair-02.png?w=768&amp;h=921&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1678316510&amp;s=3fd1127c38d5e91d6151ea97a6aef8fd 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/haute-chair-02.png?w=576&amp;h=691&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678316510&amp;s=c4d0d09999dcbecc7da239a5d4cfe525 576w, https://optimise2.assets-servd.host/momentous-zorro/staging/haute-chair-02.png?w=1152&amp;h=1382&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678316510&amp;s=63ea00818e667c859c8987b888757eff 1152w"
+    sizes="auto" alt="Haute chair 02" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --aether-fuels --cover" data-project="aether-fuels">
+
+                            
+
+  <video loop muted autoplay playsinline class="lazyfade">
+    <source src="https://servd-momentous-zorro.b-cdn.net/production/aether-video.mp4" type="video/mp4">
+  </video>
+      
+    </div>
+      <div class="js-work-list-art art-pane__art --craft-cms --contain" data-project="craft-cms">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEwAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A74tjrwPWmrNG0hRWBZcZHpnpQ4JPTIqBLbZevII0Cuoy4GGyD0PqOf8AOaALdFFFAH%2F%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/craft-hero-02.png?w=1200&amp;h=1440&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678319335&amp;s=430c0fb647b666ab2337e621b23edfc5 1200w, https://optimise2.assets-servd.host/momentous-zorro/staging/craft-hero-02.png?w=992&amp;h=1190&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678319335&amp;s=42abe2d08f7bdf17526590eaadeaccf5 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/craft-hero-02.png?w=768&amp;h=921&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1678319335&amp;s=0a742180e2123412b32414e43e8d2e0c 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/craft-hero-02.png?w=576&amp;h=691&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678319335&amp;s=8387a022e2779a8a786f5b7fff1cc1a2 576w, https://optimise2.assets-servd.host/momentous-zorro/staging/craft-hero-02.png?w=1152&amp;h=1382&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678319335&amp;s=ff10cc4b83d1f326dca8c49208afe666 1152w"
+    sizes="auto" alt="Craft hero 02" />
+        
+    </div>
+      <div class="js-work-list-art art-pane__art --saint-kate --contain" data-project="saint-kate">
+
+                            
+
+      <img data-src="https://cdn2.assets-servd.host/momentous-zorro/production/sk-logo_2023-03-16-004720_yexw.svg" class="lazyload lazysvg lazyfade" alt="Sk logo" style="padding-bottom: 120.01488095238%;">
+      
+    </div>
+      <div class="js-work-list-art art-pane__art --berdan-real-estate --cover" data-project="berdan-real-estate">
+
+                            
+
+            <img class="lazyload lazyfade" src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAFAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A6S4k8q9DO7pGq%2FNlPlOffH6VrR%2F8e%2F8AwGsrVTbtYS%2Bex%2BZSdoz16jgfQVl6JNeQRTYLzwsNy4yzKfQjmp2KK2tSyWxiVHJVioIbvz%2BdblkFgs3jiUKgUkDrjr%2FhRRVRJk9D%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/berdan-hero.jpg?w=992&amp;h=1291&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678407268&amp;s=e52b56fd63bc53315f48f9fa895a86b0 992w, https://optimise2.assets-servd.host/momentous-zorro/staging/berdan-hero.jpg?w=768&amp;h=999&amp;q=60&amp;fm=webp&amp;fit=crop&amp;dm=1678407268&amp;s=4409b4f6b5d74514cdfbca7c4ce428b4 768w, https://optimise2.assets-servd.host/momentous-zorro/staging/berdan-hero.jpg?w=576&amp;h=749&amp;q=90&amp;fm=webp&amp;fit=crop&amp;dm=1678407268&amp;s=b3ce073dc52b96328735efe57d31d250 576w"
+    sizes="auto" alt="Berdan hero" />
+        
+    </div>
+  </div>
+  <div class="splash js-splash">
+  <div class="splash__inner" id="js-site-header">
+    <h1 class="t-heading-l">
+      Say is the independent design & development practice of Collin&nbsp;Joyce.
+    </h1>
+
+    <a href="#work" class="splash__button">
+      <span class="btn">View Work</span>
+    </a>
+  </div>
+</div>
+  <div class="work-pane" id="work">
+  <nav class="work-list">
+
+    
+      <a href="#worksonos-radio" class="js-work-list-item" data-project="sonos-radio">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A6l7qCNirzRqV6gsBjjP8iKEuYHcIkyMx6AMCTQ9tA7l3hRmPUlQSaEtYI2DJDGpXoQoGOMfyJrwtDr1P%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-thumb.png?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678494311&amp;s=ff3efe01c3ca7887c5d9de256afed472 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-thumb.png?w=400&amp;h=400&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678494311&amp;s=c6931aca1eb3780f13efdb44deb94927 400w, https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-thumb.png?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678494311&amp;s=a6227e547c8c975bf2179832a7563689 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/sonos-thumb.png?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678494311&amp;s=db0d513a9a0c1a5e50794603a9093f76 50w"
+    sizes="auto" alt="Sonos thumb" />
+                  
+        <div class="work-list__text">
+          Sonos Radio
+                    <br />
+          <p>A new home for Sonos’ robust radio catalog</p>
+                      <span class="tag">Design</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workfield-notes" class="js-work-list-item" data-project="field-notes">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A0LibawjUEs3HH8s9jUFsJXkjggJk5zk8hhnsfanSIwlEEQcu%2FO%2FuBnpnr%2F8ArrcsrQ2ESKNpunHUjGT%2FAJHJrkhHmOqUrH%2F%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/icon-field-notes.jpg?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1677562703&amp;s=06d8cbf1eb24fff35beb8ea0223f9637 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-field-notes.jpg?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1677562703&amp;s=c66d212d38764b35c988de2061cb0b94 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-field-notes.jpg?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1677562703&amp;s=6ae4edbdb621f70772feaef51ae61558 50w"
+    sizes="auto" alt="Icon field notes" />
+                  
+        <div class="work-list__text">
+          Field Notes
+                    <br />
+          <p>An honest, no-frills notebook.</p>
+                      <span class="tag">Design</span>
+                      <span class="tag">Development</span>
+                      <span class="tag">E-Commerce</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workstudio-shalo" class="js-work-list-item" data-project="studio-shalo">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A0dT1KS2mS3t4w8zDPOTj04HU9fyNGmam91I8FwgSZfTPPXseh4puq6dLPMlzatiVRjGcZx0Oex6%2FmeKbpWmzQTtcXJ%2FeHtnPr3%2FE%2FpwMV4dsL9V6Xt%2F29zf5G3732vXf5W%2FzP%2F%2FZ"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-thumb.jpg?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1680302706&amp;s=c1d069ed041061a6be813920906963df 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-thumb.jpg?w=400&amp;h=400&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1680302706&amp;s=05b7cdf37d4dd01391156a0d890c6188 400w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-thumb.jpg?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1680302706&amp;s=a288c764c5761c75a82aa72db4f34b82 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/shalo-thumb.jpg?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1680302706&amp;s=f512499d97b358e3d8ef668c16e002e8 50w"
+    sizes="auto" alt="Shalo thumb" />
+                  
+        <div class="work-list__text">
+          Studio Shalo
+                    <br />
+          <p>Studio, shop, and gallery of Chicago-based artist, illustrator, &amp; designer Jeremiah Shalo.</p>
+                      <span class="tag">Development</span>
+                      <span class="tag">E-Commerce</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workmas-context" class="js-work-list-item" data-project="mas-context">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A52HQ9TniSWKymeNxlWA4Iom0PU4InllspkjQZZiOAK1INfMEEcUd5KiokChRnAwfn%2Fz3q1qmoabPaXPla7fyO6tthYHYSe33elAz%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/mc-thumb.png?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678911408&amp;s=104d5bf530889c5163f3bed1e9fe6f50 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/mc-thumb.png?w=400&amp;h=400&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678911408&amp;s=13adcb6e6b9c4cfc4adac3c1bd8c5bdf 400w, https://optimise2.assets-servd.host/momentous-zorro/staging/mc-thumb.png?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678911408&amp;s=51f49d616125fe0dbec44d376eb56698 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/mc-thumb.png?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678911408&amp;s=c73dbd4e22b733438811dc3acb744bb2 50w"
+    sizes="auto" alt="Mc thumb" />
+                  
+        <div class="work-list__text">
+          Mas Context
+                    <br />
+          <p>Addressing issues that affect the urban context</p>
+                      <span class="tag">Development</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workvaryer" class="js-work-list-item" data-project="varyer">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A7iW4Eb7AjMeM4IGM9OpHpRFcCR9pRlPOMkHOOvQmiW3Ej7g7KeM4AOcHI6g9KIrcRvu3sx5xkAYz16AUgP%2FZ"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/varyer-thumb.jpg?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1680286115&amp;s=a8c2f4547094cd15dabb65810c97cb7d 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/varyer-thumb.jpg?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1680286115&amp;s=6e13afdcd2f0b759190073ef173161bc 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/varyer-thumb.jpg?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1680286115&amp;s=561d4a639b9740ea7a777b823e0b05ae 50w"
+    sizes="auto" alt="Varyer thumb" />
+                  
+        <div class="work-list__text">
+          Varyer
+                    <br />
+          <p>The Unexpected Union of Unexpected Things.</p>
+                      <span class="tag">Development</span>
+                      <span class="tag">E-Commerce</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workmanual-cinema" class="js-work-list-item" data-project="manual-cinema">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A0bu8NvKEEe%2FIz1P%2BHtRbXpuJzH5W0BScnPPT296oaxokmpXgnS4EY8oR4IJ6NuzUml6TNY3IlluzMBG0YQg4GW3cfyrq1ueJanyXvqf%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/icon-manual-cinema.jpg?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678485683&amp;s=a9fc8d14008029725bdbbc7200046695 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-manual-cinema.jpg?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678485683&amp;s=6c9918d3ecc81c8a8807a7facbe39bb8 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-manual-cinema.jpg?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678485683&amp;s=e49c1e1762897d3579d410ad29cf9926 50w"
+    sizes="auto" alt="Icon manual cinema" />
+                  
+        <div class="work-list__text">
+          Manual Cinema
+                    <br />
+          <p>Emmy Award-winning performance collective, design studio, and film production company</p>
+                      <span class="tag">Development</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workaxoft" class="js-work-list-item" data-project="axoft">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A4gKzdAT9KUxuoyVIHvSBmHQkfSlMjMMFiR71bK0P%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/icon-axoft.jpg?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678828604&amp;s=a4f02ade992a80fd41796ba515b1c3c0 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-axoft.jpg?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678828604&amp;s=78eac6d7c1ab4fec5558bcc687cf6b91 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-axoft.jpg?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678828604&amp;s=eae14bc5e1a001de13c854476442d35a 50w"
+    sizes="auto" alt="Icon axoft" />
+                  
+        <div class="work-list__text">
+          Axoft
+                    <br />
+          <p>Transforming outcomes, health, and the human experience</p>
+                      <span class="tag">Development</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workhaute-living" class="js-work-list-item" data-project="haute-living">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A8%2ForQt57dLdFkEBYKesJJzknk5%2F2VH0Y0tzLatbyrHJEWOCALfafvMSAc8cEfoO1AH%2F%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/haute-thumb.png?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678315777&amp;s=c0d570ef1a11794c9b6a82b9404458e6 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/haute-thumb.png?w=400&amp;h=400&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678315777&amp;s=8855ee157da83b36f6a02986e2abb99f 400w, https://optimise2.assets-servd.host/momentous-zorro/staging/haute-thumb.png?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678315777&amp;s=905432440e565be86ecf271d47f07d4f 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/haute-thumb.png?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678315777&amp;s=bf6649696cfae5e8c7bafed9cd1486da 50w"
+    sizes="auto" alt="Haute thumb" />
+                  
+        <div class="work-list__text">
+          Haute Living
+                    <br />
+          <p>Mod­ern &amp; contemporary furniture showroom in Chicago, IL</p>
+                      <span class="tag">Design</span>
+                      <span class="tag">Development</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workaether-fuels" class="js-work-list-item" data-project="aether-fuels">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8Az7S3R4%2FMkR5Cz%2BXHGhwWb3Pp0%2FOi6t0WMyRo8ZR%2FLkjc52nqMH0OD%2BVSabeRWyus6l0Zl4HUDoxB%2FwB3I%2FH2pt9dx3EMaRKyBSdwY5JwAFOcDtx0%2FnX1F5%2B020PK93lP%2F9k%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/icon-aether.jpg?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678834374&amp;s=b337196a13a6a51faefce560b4632094 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-aether.jpg?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678834374&amp;s=1c8f702673dbd023a922c93bc185e928 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/icon-aether.jpg?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678834374&amp;s=253dd8601295296f981638089fa2ade9 50w"
+    sizes="auto" alt="Icon aether" />
+                  
+        <div class="work-list__text">
+          Aether Fuels
+                    <br />
+          <p>Decarbonizing aviation and ocean shipping</p>
+                      <span class="tag">Development</span>
+                      <span class="tag">Animation</span>
+                  </div>
+      </a>
+
+    
+      <a href="#workcraft-cms" class="js-work-list-item" data-project="craft-cms">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8AjggeeTYmOASSTgAeppJovKfbvR%2BM7kORTre4a3dmUKwZSrKwyCPSmyv5khbYqZ%2FhUYArztLH0vvc3kf%2F2Q%3D%3D"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/craft-logo.png?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678318027&amp;s=b168b6c4b4d54bc13f587738ba1c9fbc 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/craft-logo.png?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678318027&amp;s=93afa419558990ca2e23e91615772f9d 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/craft-logo.png?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678318027&amp;s=a270c9d4563a6b4bf9aa21b69cedff20 50w"
+    sizes="auto" alt="Craft logo" />
+                  
+        <div class="work-list__text">
+          Craft CMS
+                    <br />
+          <p>A CMS designed for everyone</p>
+                      <span class="tag">Design</span>
+                      <span class="tag">Development</span>
+                  </div>
+      </a>
+
+    
+      <a href="#saint-kate" class="js-work-list-item" data-project="saint-kate">
+        
+                                    
+
+            <img class="lazyload " src="data:image/jpeg;base64,%2F9j%2F4AAQSkZJRgABAQEAYABgAAD%2F%2FgA7Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2ODApLCBxdWFsaXR5ID0gNTAK%2F9sAQwAQCwwODAoQDg0OEhEQExgoGhgWFhgxIyUdKDozPTw5Mzg3QEhcTkBEV0U3OFBtUVdfYmdoZz5NcXlwZHhcZWdj%2F9sAQwEREhIYFRgvGhovY0I4QmNjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2Nj%2F8AAEQgAEAAQAwEiAAIRAQMRAf%2FEAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC%2F%2FEALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6g4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2drh4uPk5ebn6Onq8fLz9PX29%2Fj5%2Bv%2FEAB8BAAMBAQEBAQEBAQEAAAAAAAABAgMEBQYHCAkKC%2F%2FEALURAAIBAgQEAwQHBQQEAAECdwABAgMRBAUhMQYSQVEHYXETIjKBCBRCkaGxwQkjM1LwFWJy0QoWJDThJfEXGBkaJicoKSo1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoKDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uLj5OXm5%2Bjp6vLz9PX29%2Fj5%2Bv%2FaAAwDAQACEQMRAD8A7a9uGhCKnBbJz6YH9TgfjSWNw04dWySuDn1BHt3ByPwpb63aYIyfeXIxx3HvxkHB%2FCiyt2h3s%2FBfAx6AD%2BpyfxqdeY29z2fmf%2F%2FZ"
+    data-srcset="https://optimise2.assets-servd.host/momentous-zorro/staging/sk-logo-thumb.png?w=200&amp;h=200&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678321226&amp;s=2463d424bd36c2950573b996b93e58ce 200w, https://optimise2.assets-servd.host/momentous-zorro/staging/sk-logo-thumb.png?w=400&amp;h=400&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678321226&amp;s=3382a29dd1c8990b401c8374cfcafad1 400w, https://optimise2.assets-servd.host/momentous-zorro/staging/sk-logo-thumb.png?w=100&amp;h=100&amp;q=61&amp;fm=webp&amp;fit=crop&amp;dm=1678321226&amp;s=375eb00c30deb16d755c3b952dd96bb1 100w, https://optimise2.assets-servd.host/momentous-zorro/staging/sk-logo-thumb.png?w=50&amp;h=50&amp;q=82&amp;fm=webp&amp;fit=crop&amp;dm=1678321226&amp;s=ff30edb6383aa97e42f438abb4b57bb3 50w"
+    sizes="auto" alt="Sk logo thumb" />
+                  
+        <div class="work-list__text">
+          Saint Kate
+                    <br />
+          <p>Online home for a modern luxury arts hotel in Milwaukee, WI</p>
+                      <span class="tag">Design</span>
+                      <span class="tag">Development</span>
+                  </div>
+      </a>
+
+    
+      <!-- <a href="#workberdan-real-estate" class="js-work-list-item" data-project="berdan-real-estate"> -->
+        <a href="#berdan-real-estate" class="js-work-list-item" data-project="berdan-real-estate"></a>
+        
+                                    
+
+      <img data-src="/berdan-logo.svg" class="lazyload lazysvg " alt="Berdan logo" style="padding-bottom: 100%;">
+                
+        <div class="work-list__text">
+          Berdan Real Estate
+                    <br />
+          <p>Boutique real estate agency in Chicago, IL</p>
+                      <span class="tag">Branding</span>
+                      <span class="tag">Design</span>
+                      <span class="tag">Development</span>
+                  </div>
+      </a>
+
+    
+  </nav>
+</div>
+  <div class="window js-work-window">
+  <div class="window__loader">
+    <div class="window__spinner"></div>
+  </div>
+  <div class="window__inner">
+    <div class="window__project-ctr js-project-outer">
+      <div class="window__close-bar-alt js-close-work-window"></div>
+      <div class="project js-project">
+
+        
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="window__close-btn">
+  <div class="btn js-close-work-window --alt-hover">
+    Close
+  </div>
+</div>
+  <div class="window --half js-info-window">
+  <div class="window__close-bar js-close-info-window"></div>
+  <div class="window__loader">
+    <div class="window__spinner"></div>
+  </div>
+  <div class="window__inner">
+    <div class="window__info-ctr js-info-outer">
+      <div class="info js-info">
+
+        <div class="info__full">
+          <h1 class="tag --no-padding">Background</h1>
+
+          <h2 class="t-heading-l">I’m a designer and web developer with a passion for&nbsp;creating beautiful and functional online experiences.</h2>
+
+          <p class="t-body-m">
+           With over fifteen years of experience in the industry, I’ve built a reputation for my expertise in digital brand expression, user experience design, and responsive web development.
+          </p>
+
+          <p class="t-body-m">
+           Located in Los Angeles, I work with companies of all sizes, stages, and industries. As an independent creative, I have partnered with numerous design studios, providing strategy, design, and web development support to their existing teams.
+          </p>
+
+          <p class="tag --no-padding">Philosophy</p>
+
+          <h2 class="t-heading-l">Substance over style, but&nbsp;never boring</h1>
+
+          <p class="t-body-m">
+            All projects are unique, but some design principles are universal. I believe that distilling a brand down to its simplest form (from messaging to visual expression) is crucial to effectively communicate your message. From that foundation, more can be added to enhance the message, functionally and without pretense.
+          </p>
+        </div>
+
+        <div class="info__half">  
+          <p class="tag --no-padding">Services</p>
+          <ul class="t-body-m">
+            <li>Branding / Visual Identity</li>
+            <li>Art Direction</li>
+            <li>Web Design & Development</li>
+            <li>E-commerce Consulting & Development</li>
+            <li>Animation / Motion Graphics</li>
+            <li>Design Consulting</li>
+          </ul>
+        </div>
+
+        <div class="info__half">  
+          <p class="tag --no-padding">Technology</p>
+          <ul class="t-body-m">
+            <li>HTML / CSS / JS / PHP</li>
+            <li>Craft CMS</li>
+            <li>Shopify</li>
+            <li>Craft Commerce</li>
+            <li>Wordpress</li>
+            <li>Sanity</li>
+            <li>Next.js</li>
+          </ul>
+        </div>
+
+        <div class="info__half">
+          <p class="tag --no-padding">Recognition</p>
+          <ul class="t-body-m --two-col"> 
+            <li>Awwwards</li>
+            <li>Site Inspire</li>
+            <li>Society of Typographic Arts</li>
+            <li>Typeforce</li>
+            <li>Communication Arts Magazine</li>
+            <li>Print Magazine</li>
+          </ul>
+        </div>
+
+        <div class="info__half">
+          <p class="tag --no-padding">Select Clients / Collaborators</p>
+          <ul class="t-body-m --two-col"> 
+            <li>Sonos</li>
+            <li>Patron Tequila</li>
+            <li>Kinja (The Onion, AV Club, et al.)</li>
+            <li>Chicago Design Week</li>
+            <li>Field Notes</li>
+            <li>Mas Context</li>
+            <li>Craft CMS</li>
+            <li>Varyer</li>
+            <li>Span Studio</li>
+          </ul>
+        </div>
+
+        <div class="info__full">
+          <h3 class="t-heading-l">Get in touch</h3>
+          <p class="t-body-m">General / Project Inquiries: <br />
+          <a href="mailto:toxel@hey.com">toxel@hey.com</a></p>
+
+          <p class="t-body-m">
+            Follow: <br />
+            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">Instagram</a>&emsp;
+            <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener">Twitter</a>
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="window__close-btn">
+    <div class="btn js-close-info-window --dark">
+      Close
+    </div>
+  </div>
+</div>
+
+
+      <script src="https://say.studio//dist/scripts/main-81b8419d39.bundle.js?v=1680633565"></script></body>
+</html>
