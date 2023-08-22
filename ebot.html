@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>eBot Animation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+	<meta name="description" content="El ebot FUERA DE LINEA: PARA CORRABORAR INFORMACIÖN DE lighthouse de 100%">
+<div class="elEBOT">
+<style>
+/*!
+    eBoot Sample
+    Animaciones CSS en @EscuelaIT
+    Joan León @nucliweb
+*/
+.body-ebot {
+    background: #353535;
+    overflow-y: hidden;
+  height:600px;
+  width:auto
+}
+.ebot {
+    position: relative;
+    top: 20px;
+    width: 343px;
+    height: 338px;
+    margin: 0 auto;
+    background: url(https://ucarecdn.com/e28eae62-1866-48bd-8c1a-b186537768e0/-/setfill/ece3d2/-/format/webp/) 0 0 no-repeat;
+    z-index: 101;
+    transform: translateY(-370px);
+    animation: ebot 500ms ease 1.2s both,
+               bounce 1400ms ease-out 0s infinite;
+
+}
+
+.ebot::before {
+    content: "";
+    position: absolute;
+    top: 125px;
+    left: 105px;
+    width: 123px;
+    height: 71px;
+    display: block;
+    background: url(https://ucarecdn.com/fefd478b-9fda-4cc6-8601-550d9692da0c/-/setfill/ece3d2/-/format/webp/) 0 0 no-repeat;
+    animation: eyes 150ms steps(3) 1.8s both;
+
+}
+
+.ebot::after {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 145px;
+    width: 31px;
+    height: 27px;
+    display: block;
+    background: url(https://ucarecdn.com/81bf1a19-b9bb-479c-bee5-20ce46dd5d08/-/setfill/ece3d2/-/format/webp/) 0 0 no-repeat;
+    animation: ball 450ms steps(5) both infinite;
+}
+
+
+
+.shadow {
+    position: absolute;
+    top: 450px;
+    width: 100%;
+    height: 45px;
+}
+
+.shadow::after {
+    content: "";
+    position: relative;
+    width: 245px;
+    height: 15px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+    box-shadow: 0 0 5px 20px rgba(0,0,0,.3);
+    transform: scale(0);
+    animation: shadow 500ms ease 1.2s both,
+               bounce-shadow 1400ms ease-out 0s infinite;
+}
+
+
+/* eBot animation ----------------------------------- */
+@keyframes ebot {
+	 to { transform: translateY(0); }
+}
+
+/* Shadow animation --------------------------------- */
+@keyframes shadow {
+	 to { transform: scale(0.9); }
+}
+
+/* Bounce Shadow animation -------------------------- */
+@keyframes bounce-shadow {
+	 0% { transform: scale(0.9); }
+	 50% { transform: scale(1); }
+   100% { transform: scale(0.9); }
+}
+
+
+
+/* Eyes animation ----------------------------------- */
+@keyframes eyes {
+	 0% {background-position: 0 0; }
+	 100% {background-position: 0 -213px; }
+}
+
+
+/* Ball animation ----------------------------------- */
+@keyframes ball {
+	 0% {background-position: 0 0; }
+	 100% {background-position: 0 -135px; }
+}
+
+
+/* Bounce animation --------------------------------- */
+@keyframes bounce {
+	 0%, 100% { transform: translateY(0) }
+	 50% { transform: translateY(20px) }
+}
+
+</style>
+<div class="body-ebot">
+<div class="ebot"></div>
+<div class="shadow"></div>
+</div>
+</div>
+  
+  
+  
+</body>
+
+</html>
